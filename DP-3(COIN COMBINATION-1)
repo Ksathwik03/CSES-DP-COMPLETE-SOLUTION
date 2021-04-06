@@ -44,11 +44,8 @@ int main(){
       }
 
       ll dp[max(m,k)+1];
-      for(int i=1;i<m;i++){
-        dp[i] = 0;
-      }
       dp[0] =1;
-      for(int i=m;i<=k;i++){
+      for(int i=1;i<=k;i++){
             dp[i] =0;
         fr(j,n){
         if(i -a[j]>= 0){
